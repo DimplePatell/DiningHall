@@ -18,6 +18,10 @@ import com.example.dininghall.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.view.View.OnClickListener;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+//        setSupportActionBar(binding.toolbar);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
@@ -43,7 +47,19 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        //ISR Location
+        binding.isrLocation.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.google.com/maps/place/Illinois+Street+Residence+Halls/@40.1101128,-88.223924,17z/data=!3m1!4b1!4m5!3m4!1s0x880cd71343b8dcff:0x9c51fc67ad14bfda!8m2!3d40.1102654!4d-88.2217384"));
+                startActivity(intent);
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

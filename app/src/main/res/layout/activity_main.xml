@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.DiningHall.AppBarOverlay">
@@ -16,8 +17,8 @@
 
     <include
         layout="@layout/content_main"
-        android:layout_height="103dp"
-        android:layout_width="match_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="103dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -29,7 +30,19 @@
         android:contentDescription="@string/todo"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:layout_anchorGravity="top|center"
+
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/isrLocation"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:background="@drawable/location_icon"
+        android:cropToPadding="false"
+        android:translationZ="10dp"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button1"
@@ -46,7 +59,7 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="427dp"
-        android:layout_height="135dp"
+        android:layout_height="129dp"
         android:text="@string/par"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:translationY="130dp"

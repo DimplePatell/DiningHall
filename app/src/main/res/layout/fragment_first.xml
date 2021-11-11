@@ -5,10 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment" >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="10px"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+<!--    <Button-->
+<!--        android:id="@+id/buttonFirst"-->
+<!--        android:layout_width="10dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        tools:layout_editor_absoluteX="144dp"-->
+<!--        tools:layout_editor_absoluteY="0dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+<!--<ImageButton-->
+<!--    android:id="@+id/isrLocation"-->
+<!--    android:layout_width="75dp"-->
+<!--    android:layout_height="75dp"-->
+<!--    android:background="@drawable/location_icon"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintHorizontal_bias="0.952"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    app:layout_constraintVertical_bias="0.0"-->
+<!--    tools:ignore="SpeakableTextPresentCheck" />-->
