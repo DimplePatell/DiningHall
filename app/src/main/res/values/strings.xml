@@ -9,4 +9,13 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ISR">\"ISR\"</string>
+    <string name="far">FAR</string>
+    <string name="todo">TODO</string>
+    <string name="ike">IKE</string>
+    <string name="isr">ISR</string>
+    <string name="par">PAR</string>
+    <string name="field_of_greens">Field of Greens</string>
+    <string name="lar">LAR</string>
+    <string name="far">FAR</string>
 </resources>
