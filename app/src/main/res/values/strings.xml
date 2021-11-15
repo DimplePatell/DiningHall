@@ -17,5 +17,5 @@
     <string name="par">PAR</string>
     <string name="field_of_greens">Field of Greens</string>
     <string name="lar">LAR</string>
-    <string name="far">FAR</string>
+<!--    <string name="far">FAR</string>-->
 </resources>
