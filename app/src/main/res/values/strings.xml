@@ -17,5 +17,7 @@
     <string name="par">PAR</string>
     <string name="field_of_greens">Field of Greens</string>
     <string name="lar">LAR</string>
-<!--    <string name="far">FAR</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="far">FAR</string>-->
 </resources>

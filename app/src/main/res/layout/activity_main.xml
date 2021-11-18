@@ -1,233 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3E0E0"
-    android:translationY="20dp"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/content_main"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.DiningHall.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.DiningHall.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_conversion_absoluteHeight="103dp"
-        tools:layout_conversion_absoluteWidth="393dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
-    <ImageButton
-        android:id="@+id/isrLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/isr"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toTopOf="@+id/isr"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <ImageButton
-        android:id="@+id/farLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/far"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toTopOf="@+id/far"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <ImageButton
-        android:id="@+id/larLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/lar"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toBottomOf="@+id/par"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <ImageButton
-        android:id="@+id/fieldLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/field_of_greens"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toBottomOf="@+id/lar"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <ImageButton
-        android:id="@+id/parLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/par"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toTopOf="@+id/par"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <ImageButton
-        android:id="@+id/ikeLocation"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:background="@drawable/location_icon"
-        android:cropToPadding="false"
-        android:translationZ="10dp"
-        android:visibility="visible"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintBottom_toBottomOf="@+id/ike"
-        app:layout_constraintEnd_toEndOf="@+id/isr"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/isr"
-        app:layout_constraintTop_toBottomOf="@+id/isr"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_conversion_absoluteHeight="80dp"
-        tools:layout_conversion_absoluteWidth="70dp" />
-
-    <Button
-        android:id="@+id/far"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#B80000"
-        android:backgroundTint="#FFB80000"
-        android:text="@string/far"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/white"
-        android:textSize="30dp"
-        app:iconTint="@color/design_default_color_error"
-        app:layout_constraintBottom_toTopOf="@+id/par"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#911818"
-        tools:layout_conversion_absoluteHeight="130dp"
-        tools:layout_conversion_absoluteWidth="393dp" />
-
-    <Button
-        android:id="@+id/par"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/par"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30dp"
-        app:layout_anchor="@+id/far"
-        app:layout_anchorGravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/far"
-        app:rippleColor="#438E8B8B"
-        tools:layout_conversion_absoluteHeight="129dp"
-        tools:layout_conversion_absoluteWidth="427dp" />
-
-    <Button
-        android:id="@+id/lar"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="@string/lar"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/par"
-        tools:layout_conversion_absoluteHeight="129dp"
-        tools:layout_conversion_absoluteWidth="393dp" />
-
-    <Button
-        android:id="@+id/field_of_greens"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#329C0C"
-        android:backgroundTint="#12B119"
-        android:text="@string/field_of_greens"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lar"
-        tools:layout_conversion_absoluteHeight="128dp"
-        tools:layout_conversion_absoluteWidth="411dp" />
-
-    <Button
-        android:id="@+id/isr"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="@string/isr"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/field_of_greens"
-        app:rippleColor="#CCCCCC"
-        tools:layout_conversion_absoluteHeight="107dp"
-        tools:layout_conversion_absoluteWidth="393dp" />
-
-    <Button
-        android:id="@+id/ike"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="@string/ike"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/isr"
-        tools:layout_conversion_absoluteHeight="133dp"
-        tools:layout_conversion_absoluteWidth="393dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

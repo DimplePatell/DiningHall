@@ -14,6 +14,24 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_IkeFragment"
+            app:destination="@id/IkeFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_IsrFragment"
+            app:destination="@id/IsrFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ParFragment"
+            app:destination="@id/ParFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_FarFragment"
+            app:destination="@id/FarFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_LarFragment"
+            app:destination="@id/LarFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_FieldOfGreensFragment"
+            app:destination="@id/FieldOfGreensFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +41,66 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IkeFragment"
+        android:name="com.example.dininghall.IkeFragment"
+        android:label="Ike Fragment"
+        tools:layout="@layout/fragment_ike">
+
+        <action
+            android:id="@+id/action_IkeFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IsrFragment"
+        android:name="com.example.dininghall.IsrFragment"
+        android:label="Isr Fragment"
+        tools:layout="@layout/fragment_isr">
+
+        <action
+            android:id="@+id/action_IsrFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ParFragment"
+        android:name="com.example.dininghall.ParFragment"
+        android:label="Par Fragment"
+        tools:layout="@layout/fragment_par">
+
+        <action
+            android:id="@+id/action_ParFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FarFragment"
+        android:name="com.example.dininghall.FarFragment"
+        android:label="Far Fragment"
+        tools:layout="@layout/fragment_far">
+
+        <action
+            android:id="@+id/action_FarFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LarFragment"
+        android:name="com.example.dininghall.LarFragment"
+        android:label="Lar Fragment"
+        tools:layout="@layout/fragment_lar">
+
+        <action
+            android:id="@+id/action_LarFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FieldOfGreensFragment"
+        android:name="com.example.dininghall.FieldOfGreensFragment"
+        android:label="Field Of Greens Fragment"
+        tools:layout="@layout/fragment_field_of_greens">
+
+        <action
+            android:id="@+id/action_FieldOfGreens_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
