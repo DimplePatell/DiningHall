@@ -186,6 +186,7 @@
         tools:layout_conversion_absoluteHeight="129dp"
         tools:layout_conversion_absoluteWidth="393dp" />
 
+
     <Button
         android:id="@+id/fieldofgreens"
         android:layout_width="match_parent"
@@ -199,23 +200,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lar"
+        app:layout_constraintTop_toBottomOf="@+id/ike"
         tools:layout_conversion_absoluteHeight="128dp"
         tools:layout_conversion_absoluteWidth="411dp" />
-
-
-
 
     <Button
         android:id="@+id/isr"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="#329C0C"
+        android:backgroundTint="#12B119"
+        android:clickable="true"
         android:text="@string/isr"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/ike"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldofgreens" />
+        app:layout_constraintTop_toBottomOf="@+id/lar"
+        tools:layout_conversion_absoluteHeight="128dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/isr"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:text="@string/isr"-->
+<!--        android:textSize="30dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/ike"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fieldofgreens" />-->
 
     <Button
         android:id="@+id/ike"
